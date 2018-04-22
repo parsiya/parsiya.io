@@ -1,0 +1,11 @@
+[submodule "Parsia-Clone"]
+	path = Parsia-Clone
+	url = git@github.com:parsiya/Parsia-Clone.git
+	branch = clone-2
+[submodule "content"]
+	path = content
+	url = git@github.com:parsiya/Parsia-Clone.git
+	branch = clone-2
+[submodule "themes/Hugo-Octopress"]
+	path = themes/Hugo-Octopress
+	url = git@github.com:parsiya/Hugo-Octopress.git

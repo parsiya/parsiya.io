@@ -1,0 +1,6 @@
+s3cmd
+public/
+*.exe
+Thumbs.db
+thumbs.db
+public

@@ -1,0 +1,19 @@
+<!-- This file contains the header/title for each post -->
+
+<header>
+    <p class="meta">{{ if isset .Params "date" }}{{ .Date.Format "Jan 2, 2006" }} - {{ end }}
+        {{ if not .Site.Params.disableReadingTime }}{{ .ReadingTime }} minute read {{ end }}
+
+        {{ if isset .Params "categories" }}
+            - {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>{{ end }}
+        {{ end }}
+    </p>
+    <h1 class="entry-title">
+        {{ if ($.Scratch.Get "isHome") }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ else }} {{ .Title }} {{ end }}
+    </h1>
+
+    {{ $rel := replace .File.Path "\\" "/"}}
+    {{ $abs := printf "%s/%s" .Site.Params.repoURL $rel }}
+
+    <a href="{{ $abs }}" target="_blank">Github Link</a>
+</header>

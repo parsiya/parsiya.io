@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+{{ $baseUrl := .Site.BaseURL }}
+
+<div id="main">
+  <div id="content">
+    <div>
+      <article role="article">
+        <nav id="TableOfContents">
+          <ul class="doc-list-category">
+          {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+            {{ $p := $.Site.GetPage "taxonomyTerm" "categories" $name }}
+            <li><a href="{{ $baseUrl }}/categories/{{ $name | urlize }}">{{ $p.Title | title }}</a>
+            {{ with $p.Params.snippet }}: {{ . }}{{ end }}
+              <ul>{{ range $taxonomy.Pages }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}{{ with .Params.wip }} - WIP{{ end }}</a></li>
+                <span class="doc-entry-meta">{{ with .Params.snippet }}{{ . | markdownify }}{{ end }}</span>
+              {{ end }}
+              </ul>
+            </li>
+          {{ end }}
+          </ul>
+        </nav>
+      </article>
+    </div>
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ partial "footer.html" . }}

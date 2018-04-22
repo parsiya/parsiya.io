@@ -1,0 +1,89 @@
+# https://gohugo.io/overview/configuration/
+
+baseurl = "https://parsiya.io/"
+disablePathToLower = false
+languageCode = "en-us"
+title = "Parsia-Clone"
+theme = "Hugo-Octopress"
+
+# frontmatter will be generated in yaml format
+metadataformat = "yaml"
+
+# use CSS for highlighting
+pygmentsuseclasses = true
+
+# will make the highlight shortcode and ``` do the same thing - otherwise they are treated differently and we do not want that
+pygmentscodefences = true
+
+# can pass in pygments options here, it can also be added in the highlight shortcode
+# pygmentsoptions = "linenos=true"
+
+# ignore code directory
+ignorefiles = ["code\\.*", "\\.git\\.*", "README.*"]
+
+# disable generation of RSS and section pages
+disableKinds = ["section", "RSS"]
+
+[permalinks]
+  post = "/:title/" # only have title in URL
+
+[[menu.main]]
+  Name = "My Website"
+  URL = "https://parsiya.net"
+  weight = 2
+
+[[menu.main]]
+  Name = "Clone on Github"
+  URL = "https://github.com/parsiya/Parsia-Clone"
+  weight = 3
+
+[params]
+
+  navigationNewWindow = true
+
+  sidebarHeader = "Parsia Clone"
+
+  sidebarText = """This is my knowledge base. I call it my clone. I document things here.
+
+  My main website is [parsiya.net](https://parsiya.net) but feel free to look around. You can contact me using one of these ways:
+  """
+
+  sidebarMenuEnabled = false
+  sidebarMenuHeader = "Collections"
+
+  notfoundHeader = "There's nothing here"
+  notfoundText = """You can never go back."""
+
+  # author's name (this will appear in metadata and under posts)
+  author = "Parsia-Clone"
+
+  # appears in the site header under website title
+  subtitle = "Contains (almost) everything the real Parsia has."
+
+  # used in the search engine
+  searchEngineURL = "https://www.google.com/search"
+
+  bitbucket = "https://bitbucket.org/parsiya/"
+  twitter = "https://twitter.com/cryptogangsta/"
+  keybase = "https://keybase.io/parsiya/"
+  github = "https://github.com/parsiya/"
+  linkedin = "https://www.linkedin.com/in/parsiya"
+
+  # does this even work in action?
+  defaultKeywords = ["Parsia Hakimian" , "Parsiya" , "infosec" , "information security"]
+
+  tableOfContents = false
+
+  # generate taxonomy list and stuff
+  generateTaxonomyList = true
+
+  # Clone repo URL for linking back
+  repoURL = "https://github.com/parsiya/Parsia-Clone/tree/clone-2"
+
+  # Custom CSS
+  customCSS = ["clone.css"]
+
+# blackfriday is Hugo's markdown engine. Options are at: https://gohugo.io/overview/configuration/ (scroll down to "Configure Blackfriday rendering")
+[blackfriday]
+  hrefTargetBlank = true # open the external links in a new window
+  fractions = false

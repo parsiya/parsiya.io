@@ -1,0 +1,13 @@
+<!-- This file contains the footer for each post - do not mistake it with page footer which is in footer.html partial -->
+
+<footer>
+  <p class="meta">
+    {{ if isset .Params "tags" }}
+      <span class="categories">
+        Tags:
+        <!-- need to convert the tags to lower for the URLs to work -->
+          {{ range .Params.tags }}<a class="category" href="{{ "/tags/" | absURL }}{{ . | urlize | lower }}">{{ . }}</a>  {{ end }}
+    {{ end }}
+    </span>
+  </p>
+</footer>
