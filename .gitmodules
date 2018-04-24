@@ -1,6 +1,6 @@
 [submodule "content"]
 	path = content
-	url = git@github.com:parsiya/Parsia-Clone.git
+	url = https://github.com/parsiya/Parsia-Clone
 [submodule "themes/Hugo-Octopress"]
 	path = themes/Hugo-Octopress
-	url = git@github.com:parsiya/Hugo-Octopress.git
+	url = https://github.com/parsiya/Hugo-Octopress
