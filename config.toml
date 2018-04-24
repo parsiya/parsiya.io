@@ -1,6 +1,6 @@
 # https://gohugo.io/overview/configuration/
 
-baseurl = "https://parsiya.io/"
+baseurl = "http://parsiya.io"
 disablePathToLower = false
 languageCode = "en-us"
 title = "Parsia-Clone"
@@ -78,10 +78,10 @@ disableKinds = ["section", "RSS"]
   generateTaxonomyList = true
 
   # Clone repo URL for linking back
-  repoURL = "https://github.com/parsiya/Parsia-Clone/tree/clone-2"
+  repoURL = "https://github.com/parsiya/Parsia-Clone/tree/master"
 
   # Custom CSS
-  customCSS = ["clone.css"]
+  customCSS = ["/clone.css"]
 
 # blackfriday is Hugo's markdown engine. Options are at: https://gohugo.io/overview/configuration/ (scroll down to "Configure Blackfriday rendering")
 [blackfriday]
