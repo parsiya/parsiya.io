@@ -1,4 +1,5 @@
 ---
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 toc: false
@@ -8,7 +9,6 @@ categories:
 tags:
 - tag1
 - tag2
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
 wip: false
 snippet: |
 
