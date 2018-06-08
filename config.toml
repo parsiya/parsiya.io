@@ -19,7 +19,7 @@ pygmentscodefences = true
 # pygmentsoptions = "linenos=true"
 
 # ignore code directory
-ignorefiles = ["code\\.*", "\\.git\\.*", "README.*"]
+ignorefiles = ["^code\\.*", "\\.git\\.*", "README.*"]
 
 # disable generation of RSS and section pages
 disableKinds = ["section", "RSS"]
