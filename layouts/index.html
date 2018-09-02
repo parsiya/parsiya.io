@@ -11,12 +11,13 @@
             {{ range sort ($.Site.GetPage "taxonomyTerm" "categories").Pages "value" }}
               <li><a href="{{ .Permalink }}">{{ .Title | title }}</a>
               {{ with .Params.snippet }}: {{ . }}{{ end }}
-              <ul>
-                {{ range sort .Pages "value" }}
-                  <li><a href="{{ .RelPermalink }}">{{ .Title }}{{ with .Params.wip }} - WIP{{ end }}</a></li>
-                  <span class="doc-entry-meta">{{ with .Params.snippet }}{{ . | markdownify }}{{ end }}</span>
-                {{ end }}
-              </ul>
+                <ul>
+                  {{ range sort .Pages "value" }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}{{ with .Params.wip }} - WIP{{ end }}</a></li>
+                    <span class="doc-entry-meta">{{ with .Params.snippet }}{{ . | markdownify }}{{ end }}</span>
+                  {{ end }}
+                </ul>
+              </li>
             {{ end }}
           </ul>
         </nav>
