@@ -8,11 +8,11 @@
         <nav id="TableOfContents">
           <ul class="doc-list-category">
             <!-- Sort by value -->
-            {{ range sort ($.Site.GetPage "taxonomyTerm" "categories").Pages "value" }}
+            {{ range sort (.Site.GetPage "taxonomyTerm" "categories").Pages "value" }}
               <li><a href="{{ .Permalink }}">{{ .Title | title }}</a>
               {{ with .Params.snippet }}: {{ . }}{{ end }}
                 <ul>
-                  {{ range sort .Pages "value" }}
+                  {{ range sort .Pages }}
                     <li><a href="{{ .RelPermalink }}">{{ .Title }}{{ with .Params.wip }} - WIP{{ end }}</a></li>
                     <span class="doc-entry-meta">{{ with .Params.snippet }}{{ . | markdownify }}{{ end }}</span>
                   {{ end }}
