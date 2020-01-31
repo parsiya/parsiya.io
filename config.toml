@@ -9,11 +9,10 @@ theme = "Hugo-Octopress"
 # frontmatter will be generated in yaml format
 metadataformat = "yaml"
 
-# use CSS for highlighting
-pygmentsuseclasses = true
-
 # will make the highlight shortcode and ``` do the same thing - otherwise they are treated differently and we do not want that
 pygmentscodefences = true
+
+pygmentsStyle = "solarized-dark"
 
 # can pass in pygments options here, it can also be added in the highlight shortcode
 # pygmentsoptions = "linenos=true"
