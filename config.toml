@@ -83,7 +83,7 @@ disableKinds = ["section", "RSS"]
   generateTaxonomyList = true
 
   # Clone repo URL for linking back
-  repoURL = "https://github.com/parsiya/Parsia-Clone/tree/master"
+  repoURL = "https://github.com/parsiya/Parsia-Clone/tree/main"
 
   # Custom CSS
   customCSS = ["/clone.css"]
