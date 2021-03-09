@@ -35,7 +35,7 @@ menu:
       URL: 'https://parsiya.net/categories/clone/'
       weight: 10
 
-[params]
+params:
 
   navigationNewWindow: true
   sidebarHeader: Parsia Clone
