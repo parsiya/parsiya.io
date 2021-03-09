@@ -55,7 +55,7 @@ params:
   author: Parsia-Clone
 
   # appears in the site header under website title
-  subtitle: 'Documentation is a love letter that you write to your future self.' - Damian Conway
+  subtitle: "'Documentation is a love letter that you write to your future self.' - Damian Conway"
 
   # used in the search engine
 searchEngineURL: 'https://www.google.com/search'
