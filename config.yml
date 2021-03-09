@@ -58,7 +58,7 @@ params:
   subtitle: "'Documentation is a love letter that you write to your future self.' - Damian Conway"
 
   # used in the search engine
-searchEngineURL: 'https://www.google.com/search'
+  searchEngineURL: 'https://www.google.com/search'
 
   bitbucket: 'https://bitbucket.org/parsiya/'
   twitter: 'https://twitter.com/cryptogangsta/'
