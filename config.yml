@@ -1,6 +1,6 @@
 # https://gohugo.io/overview/configuration/
 
-baseurl: 'http://parsiya.io'
+baseurl: 'https://parsiya.io'
 disablePathToLower: false
 languageCode: en-us
 title: Parsia-Clone
