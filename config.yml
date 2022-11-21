@@ -60,11 +60,12 @@ params:
   # used in the search engine
   searchEngineURL: 'https://www.google.com/search'
 
-  bitbucket: 'https://bitbucket.org/parsiya/'
+  # bitbucket: 'https://bitbucket.org/parsiya/'
   twitter: 'https://twitter.com/cryptogangsta/'
-  keybase: 'https://keybase.io/parsiya/'
+  # keybase: 'https://keybase.io/parsiya/'
   github: 'https://github.com/parsiya/'
   linkedin: 'https://www.linkedin.com/in/parsiya'
+  mastodon: 'https://infosec.exchange/@parsiya'
 
   # does this even work in action?
   defaultKeywords:
