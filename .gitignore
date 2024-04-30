@@ -4,3 +4,4 @@ public/
 Thumbs.db
 thumbs.db
 public
+.hugo_build.lock
